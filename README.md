@@ -22,15 +22,17 @@ Vanilla JavaScript, HTML and CSS for the interactive frontend; WebGL2 for the cu
 
 ## Run locally
 
-Use **Node.js 22.18 or newer** and npm. No account or token is needed for the bundled fallback version.
+Use **Node.js 24.x and npm 11.17.0** (the checked runtime). No account or token is needed for the bundled fallback version.
 
 ```sh
+# If your Node 24 installation ships with another npm version:
+npm install --global npm@11.17.0
 npm --prefix cms ci
 npm run check
 npm run dev
 ```
 
-Open **http://127.0.0.1:5190/**. `check` builds the frontend and four functions, checks TypeScript, and runs the content/preview/media tests plus touch-gesture tests. The preview server is bound to loopback.
+Open **http://127.0.0.1:5190/**. `check` builds the frontend and four functions, checks TypeScript, and runs the content/preview/media tests plus touch-gesture tests. The preview server is bound to loopback. The workflow pins npm because older npm releases resolve an optional TypeScript peer differently from this lockfile.
 
 For optional Sanity access, copy `cms/.env.example` to `cms/.env` and configure your own project. With `SANITY_PROJECT_ID` blank, the server serves the local fallback. No production credentials or Studio deployment identity are included.
 
