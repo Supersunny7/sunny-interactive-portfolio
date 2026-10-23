@@ -3,12 +3,14 @@
   "private": true,
   "type": "module",
   "engines": {
-    "node": ">=22.18.0"
+    "node": ">=24 <25",
+    "npm": "11.17.0"
   },
   "scripts": {
     "build": "npm --prefix cms run build",
     "dev": "npm --prefix cms run preview",
     "test": "npm --prefix cms test && node --test tests/touch-gaze.test.mjs",
     "check": "npm run build && npm --prefix cms run typecheck && npm test"
-  }
+  },
+  "packageManager": "npm@11.17.0"
 }
