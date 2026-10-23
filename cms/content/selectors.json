@@ -1,0 +1,21 @@
+{
+  "heroTitle": ".hero-name-first h1",
+  "heroIntroduction": ".hero-name-first > p",
+  "heroAsideTitle": ".edge-aside h2",
+  "heroAsideText": ".edge-aside p",
+  "heroMethod": ".hero-method > p",
+  "heroSkills": ".hero-method > span",
+  "aboutTitle": "#about-title",
+  "aboutIntroduction": ".bio-introduction",
+  "workTitle": "#work-title",
+  "workIntroduction": ".section-intro",
+  "workIndex": ".work-index",
+  "workPrompt": ".work-prompt > p",
+  "libraryEyebrow": ".library-eyebrow",
+  "libraryTitle": "#library-title",
+  "contactTitle": "#contact-title",
+  "contactIntroduction": ".contact-introduction",
+  "footer": ".site-footer > p",
+  "headerTitle": ".header-identity p",
+  "headerSubtitle": ".header-identity span"
+}

@@ -1,0 +1,32 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+  functions = "netlify/functions"
+[functions]
+  node_bundler = "esbuild"
+  external_node_modules = ["@sanity/client", "@sanity/preview-url-secret"]
+[[redirects]]
+  from = "/api/content"
+  to = "/.netlify/functions/content"
+  status = 200
+  force = true
+[[redirects]]
+  from = "/api/preview-enable"
+  to = "/.netlify/functions/preview-enable"
+  status = 200
+  force = true
+[[redirects]]
+  from = "/api/preview-disable"
+  to = "/.netlify/functions/preview-disable"
+  status = 200
+  force = true
+[[redirects]]
+  from = "/"
+  to = "/.netlify/functions/page"
+  status = 200
+  force = true
+[[redirects]]
+  from = "/index.html"
+  to = "/.netlify/functions/page"
+  status = 200
+  force = true

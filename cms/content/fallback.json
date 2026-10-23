@@ -1,0 +1,370 @@
+{
+  "version": 1,
+  "projects": [
+    {
+      "id": "project-chicago-311",
+      "title": "Chicago 311",
+      "slug": "chicago-311",
+      "year": "2026",
+      "category": "data",
+      "sortOrder": 0,
+      "featured": true,
+      "summary": "192,857 service requests. Closure times and open-request aging, with Power BI results checked against Python.",
+      "description": "",
+      "caption": "",
+      "cover": {
+        "kind": "image",
+        "src": "assets/project-chicago311-overview.png",
+        "alt": "Full Chicago 311 Power BI operations overview, including report scope and source notes",
+        "width": 1268,
+        "height": 768
+      },
+      "media": [],
+      "technologies": "Power BI / SQL / Python",
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/Supersunny7/chicago-311-powerbi-analytics"
+        }
+      ],
+      "statusLabel": "",
+      "returnToCollections": false
+    },
+    {
+      "id": "project-olist-ecommerce",
+      "title": "Olist E-commerce",
+      "slug": "olist-ecommerce",
+      "year": "2026",
+      "category": "data",
+      "sortOrder": 10,
+      "featured": true,
+      "summary": "96,211 delivered orders. An interactive view of sales, delivery, and reviews, with data grain and uncertainty checked.",
+      "description": "",
+      "caption": "",
+      "cover": {
+        "kind": "image",
+        "src": "assets/project-olist-detail-v14.png",
+        "alt": "Current Olist Commerce Research dashboard with date and category filters, the sales trajectory, and key metrics",
+        "width": 1410,
+        "height": 990
+      },
+      "media": [],
+      "technologies": "Python / PostgreSQL / JavaScript",
+      "links": [
+        {
+          "label": "Dashboard",
+          "url": "https://olist-commerce-insights-sunny.sunny929538.chatgpt.site/"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/Supersunny7/ecommerce-analytics-olist"
+        }
+      ],
+      "statusLabel": "",
+      "returnToCollections": false
+    },
+    {
+      "id": "project-xinfa-paint-factory",
+      "title": "Xinfa Paint Factory",
+      "slug": "xinfa-paint-factory",
+      "year": "2026",
+      "category": "web",
+      "sortOrder": 20,
+      "featured": true,
+      "summary": "A bilingual system for sales, purchasing, inventory, and business records.",
+      "description": "",
+      "caption": "Interface shown with fictional demo data.",
+      "cover": {
+        "kind": "image",
+        "src": "assets/project-xinfa-dashboard.png",
+        "alt": "Xinfa dashboard with fictional demonstration records",
+        "width": 1905,
+        "height": 1143
+      },
+      "media": [],
+      "technologies": "Java / Spring Boot / Vue / TypeScript / MySQL",
+      "links": [
+        {
+          "label": "View on GitHub",
+          "url": "https://github.com/Supersunny7/xinfa-paint-factory-management-system"
+        }
+      ],
+      "statusLabel": "",
+      "returnToCollections": false
+    },
+    {
+      "id": "project-interactive-portfolio",
+      "title": "Interactive Portfolio",
+      "slug": "interactive-portfolio",
+      "year": "2026",
+      "category": "web",
+      "sortOrder": 30,
+      "featured": true,
+      "summary": "The site you’re exploring: a clay character that follows your cursor, a reversible scroll-driven story, and an animated project folder.",
+      "description": "",
+      "caption": "",
+      "cover": {
+        "kind": "image",
+        "src": "assets/project-portfolio-cover-v13.png",
+        "alt": "Actual portfolio homepage with navigation, the Data With Purpose headline, and the interactive clay character",
+        "width": 1009,
+        "height": 757
+      },
+      "media": [],
+      "technologies": "HTML / CSS / JavaScript",
+      "links": [],
+      "statusLabel": "",
+      "returnToCollections": true
+    },
+    {
+      "id": "project-aim-duel",
+      "title": "Aim Duel",
+      "slug": "aim-duel",
+      "year": "2026",
+      "category": "game",
+      "sortOrder": 40,
+      "featured": true,
+      "summary": "A browser game prototype exploring aiming, first- and third-person controls, and multiplayer rooms.",
+      "description": "",
+      "caption": "",
+      "cover": {
+        "kind": "image",
+        "src": "assets/project-game-cover.jpg",
+        "alt": "Actual Aim Duel gameplay in the Foundry arena, including the first-person weapon and game HUD",
+        "width": 1280,
+        "height": 720
+      },
+      "media": [],
+      "technologies": "Browser game / Interaction",
+      "links": [],
+      "statusLabel": "In development · local prototype",
+      "returnToCollections": false
+    }
+  ],
+  "categories": [
+    {
+      "id": "data",
+      "title": "Data Analytics",
+      "summary": "Exploring messy data, clear metrics, and useful findings.",
+      "sortOrder": 0,
+      "cover": {
+        "kind": "image",
+        "src": "assets/project-chicago311-cover-v13.png",
+        "alt": "Actual Chicago 311 report metrics, monthly arrivals and service volume charts",
+        "width": 1212,
+        "height": 446
+      },
+      "coverHeading": "Chicago 311\nService operations analytics"
+    },
+    {
+      "id": "web",
+      "title": "Web Applications",
+      "summary": "Building practical business systems and interactive web experiences.",
+      "sortOrder": 10,
+      "cover": {
+        "kind": "image",
+        "src": "assets/project-portfolio-cover-v13.png",
+        "alt": "Actual portfolio homepage with the clay character, navigation and Data With Purpose headline",
+        "width": 1009,
+        "height": 757
+      },
+      "coverHeading": ""
+    },
+    {
+      "id": "game",
+      "title": "Interactive Games",
+      "summary": "Building responsive gameplay and interactive systems.",
+      "sortOrder": 20,
+      "cover": {
+        "kind": "image",
+        "src": "assets/project-game-cover-v13.png",
+        "alt": "A closer view of Aim Duel’s Foundry arena and first-person weapon, cropped from actual gameplay",
+        "width": 500,
+        "height": 375
+      },
+      "coverHeading": ""
+    }
+  ],
+  "stages": [
+    {
+      "id": "campus",
+      "index": 0,
+      "title": "Campus foundations",
+      "titleId": "bio-campus-title",
+      "year": "2022–2024",
+      "ghostYear": "2022",
+      "navLabel": "2022–24",
+      "organization": "University of Wisconsin–Madison",
+      "role": "",
+      "dateLabel": "Undergraduate studies · Sep 2022 – Jun 2026",
+      "description": "Maintained residence halls, supplies and equipment, and helped train new staff. Tutored mathematics and Chinese, preparing materials and sharing learning feedback.",
+      "roles": [
+        {
+          "role": "Housing Custodian",
+          "dateLabel": "Oct 2022 – May 2024 · Part-time"
+        },
+        {
+          "role": "Academic Tutor",
+          "dateLabel": "Oct 2023 – May 2024 · Part-time"
+        }
+      ],
+      "tags": [
+        "Communication",
+        "Teaching",
+        "Responsibility"
+      ]
+    },
+    {
+      "id": "ensure",
+      "index": 1,
+      "title": "Marketing meets analytics",
+      "titleId": "bio-ensure-title",
+      "year": "2024",
+      "ghostYear": "2024",
+      "navLabel": "2024",
+      "organization": "Ensure International Education",
+      "role": "Digital Media Operator and Data Analyst Intern",
+      "dateLabel": "Jun – Aug 2024 · Suzhou, Jiangsu, China",
+      "description": "Combined social media operations and promotional video editing with campaign tracking in Excel and R. Used engagement analysis to support content planning and campaign updates.",
+      "roles": [],
+      "tags": [
+        "Excel",
+        "R",
+        "Engagement analysis"
+      ]
+    },
+    {
+      "id": "baynovation",
+      "index": 2,
+      "title": "Financial data analysis",
+      "titleId": "bio-baynovation-title",
+      "year": "2024–2025",
+      "ghostYear": "2024",
+      "navLabel": "2024–25",
+      "organization": "Baynovation, LLC",
+      "role": "Data Analyst Intern",
+      "dateLabel": "Dec 2024 – Feb 2025",
+      "description": "Built a Python stock screener to compare returns, volatility and moving averages. Used API data, time-series models and anomaly detection to explore trends and communicate research through visualizations.",
+      "roles": [],
+      "tags": [
+        "Python / pandas",
+        "Time series",
+        "Data visualization"
+      ]
+    },
+    {
+      "id": "extern",
+      "index": 3,
+      "title": "Consumer insights",
+      "titleId": "bio-extern-title",
+      "year": "2025",
+      "ghostYear": "2025",
+      "navLabel": "2025",
+      "organization": "Extern",
+      "role": "Data Analytics Extern",
+      "dateLabel": "May – Aug 2025 · Project partner: Beats by Dre",
+      "description": "Researched Gen Z preferences for wireless audio through qualitative and quantitative survey analysis. Cleaned data in Python, explored sentiment in open-text feedback, and presented findings through visualizations.",
+      "roles": [],
+      "tags": [
+        "Consumer research",
+        "Python",
+        "Sentiment analysis"
+      ]
+    },
+    {
+      "id": "next",
+      "index": 4,
+      "title": "The next chapter",
+      "titleId": "bio-next-title",
+      "year": "2026–2027",
+      "ghostYear": "2026",
+      "navLabel": "2026–27",
+      "organization": "Northwestern University",
+      "role": "M.S. in Information Technology · In progress",
+      "dateLabel": "Sep 2026 – Expected Dec 2027",
+      "description": "Graduated from UW–Madison in Jun 2026 with a B.S. in Data & Information Science. Now studying at Northwestern and building practical analytics and web projects.",
+      "roles": [],
+      "tags": []
+    }
+  ],
+  "profile": {
+    "name": "Mingyang (Sunny) Li",
+    "wordmarkFirst": "Mingyang",
+    "wordmarkRest": "（Sunny）Li",
+    "introduction": "I’m Sunny, a UW–Madison graduate and Northwestern MSIT student, pursuing opportunities in data analytics.",
+    "avatar": {
+      "kind": "image",
+      "src": "assets/hero-eight.png",
+      "alt": "",
+      "width": 1000,
+      "height": 700
+    },
+    "location": "Evanston, IL",
+    "resumeUrl": "",
+    "contacts": [
+      {
+        "label": "Phone",
+        "value": "(551) 240-1120",
+        "url": "tel:+15512401120",
+        "wide": true
+      },
+      {
+        "label": "University email",
+        "value": "Mingyangli2027@u.northwestern.edu",
+        "url": "mailto:Mingyangli2027@u.northwestern.edu",
+        "wide": true
+      },
+      {
+        "label": "Personal email",
+        "value": "Sunny929538@gmail.com",
+        "url": "mailto:Sunny929538@gmail.com",
+        "wide": true
+      },
+      {
+        "label": "GitHub",
+        "value": "Supersunny7",
+        "url": "https://github.com/Supersunny7",
+        "wide": false
+      },
+      {
+        "label": "LinkedIn",
+        "value": "Mingyang Li",
+        "url": "https://www.linkedin.com/in/mingyang-li-a60b41338/",
+        "wide": false
+      }
+    ]
+  },
+  "settings": {
+    "copy": {
+      "heroTitle": "Data.\nWith\nPurpose.",
+      "heroIntroduction": "I’m Sunny. I turn messy data into\n clear analysis and useful tools.",
+      "heroAsideTitle": "A curious mind.",
+      "heroAsideText": "Exploring questions through\ndata and code.",
+      "heroMethod": "Clean the data.\nCheck the details.\nMake it useful.",
+      "heroSkills": "SQL / Python / Power BI / JavaScript",
+      "aboutTitle": "Analyze.\n Explain.\n Build.",
+      "aboutIntroduction": "I’m Sunny, a UW–Madison graduate and Northwestern MSIT student, pursuing opportunities in data analytics.",
+      "workTitle": "My projects.",
+      "workIntroduction": "From data questions\n to interactive experiences.",
+      "workIndex": "03 / Selected work",
+      "workPrompt": "Open the folder. Explore my work.",
+      "libraryEyebrow": "Sunny / Selected work",
+      "libraryTitle": "A folder full of ideas.",
+      "contactTitle": "Let’s make\ndata useful.",
+      "contactIntroduction": "Have a question or an opportunity?\nI’d love to hear from you.",
+      "footer": "Sunny Li · Always asking why.",
+      "headerTitle": "Data analytics & interactive work",
+      "headerSubtitle": "Northwestern MSIT · Evanston, IL"
+    },
+    "title": "Sunny Li — Data Analytics Portfolio",
+    "description": "Sunny Li’s data analytics portfolio. Exploring service operations, e-commerce, and the questions behind the numbers.",
+    "shareImage": "",
+    "music": {
+      "enabled": false,
+      "url": "",
+      "title": "",
+      "loop": true,
+      "volume": 0.25
+    }
+  }
+}

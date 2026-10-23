@@ -1,0 +1,1 @@
+export const contentQuery=`{"documents": *[_type in ["project", "category", "storyStage", "experience", "profile", "siteSettings"]], "assets": *[_type in ["sanity.imageAsset", "sanity.fileAsset"]]{_id,url,metadata{dimensions}}}`;

@@ -1,0 +1,14 @@
+{
+  "name": "sunny-interactive-portfolio",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "build": "npm --prefix cms run build",
+    "dev": "npm --prefix cms run preview",
+    "test": "npm --prefix cms test && node --test tests/touch-gaze.test.mjs",
+    "check": "npm run build && npm --prefix cms run typecheck && npm test"
+  }
+}

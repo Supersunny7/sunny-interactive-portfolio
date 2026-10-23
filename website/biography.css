@@ -1,0 +1,160 @@
+/* P15 follows the approved left-copy / right-character composition. */
+.about-chapter .biography-copy{max-width:none;padding-top:17vh;width:49vw}
+.about-chapter #about-title{font-size:clamp(30px,3.1vw,45px);line-height:1;letter-spacing:0;text-wrap:initial}
+.bio-introduction{font-size:13px;line-height:1.65;color:var(--muted);max-width:45ch;margin-top:14px}
+.bio-navigation{display:none;gap:14px;margin:22px 0 26px;align-items:center}
+.motion-mode .bio-navigation{display:flex}
+.bio-navigation button{background:transparent;color:var(--muted);border:0;border-bottom:1px solid var(--line);border-radius:0;min-height:44px;padding:8px 0;font-size:12px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.bio-navigation button[aria-current]{color:var(--accent);border-bottom-color:var(--accent);font-weight:750}
+.bio-navigation button:hover{color:var(--ink)}
+.bio-stages{position:relative;max-width:510px}
+.bio-stage{padding:0 0 34px}
+.bio-year{display:block;font-family:Display,sans-serif;font-size:clamp(54px,6.3vw,88px);line-height:.95;letter-spacing:0;color:var(--accent);font-variant-numeric:tabular-nums}
+.bio-stage h3{font:650 clamp(17px,1.55vw,22px)/1.3 Manrope,sans-serif;margin:12px 0 18px;letter-spacing:-.02em}
+.bio-organization{font-size:16px;line-height:1.5;font-weight:750}
+.bio-role{font-size:13px;line-height:1.55;margin-top:3px}
+.bio-date{font-size:12px;line-height:1.65;color:var(--muted);margin-top:3px}
+.bio-roles{display:grid;gap:6px;margin:12px 0}
+.bio-roles p{font-size:12px;line-height:1.6}
+.bio-roles span{display:block;color:var(--muted)}
+.bio-description{font-size:14px;line-height:1.75;margin-top:15px;max-width:49ch}
+.bio-tags{display:flex;flex-wrap:wrap;gap:8px 14px;padding:0;margin:18px 0 0;list-style:none;color:var(--accent);font-size:12px;line-height:1.6}
+.bio-projects{font-size:12px;line-height:1.7;margin-top:16px;color:var(--muted)}
+.bio-projects a{text-decoration:underline}
+.motion-mode .about-chapter .biography-copy{max-width:none;max-height:none;overflow:visible}
+.motion-mode .about-chapter.active{opacity:var(--biography-opacity,1);transition:none}
+.motion-mode .bio-stage{position:absolute;inset:0 0 auto;padding-bottom:0;pointer-events:none}
+.motion-mode .bio-stage:not([inert]){pointer-events:auto}
+.motion-mode[data-scene=about] .reading-shade{opacity:.9}
+.static-mode .about-chapter .biography-copy{width:min(740px,65vw);max-width:none;padding-top:130px}
+.static-mode .bio-navigation{display:none}
+.static-mode .bio-introduction{margin-bottom:40px}
+.static-mode .bio-stage+.bio-stage{padding-top:24px;border-top:1px solid var(--line)}
+.static-mode .about-chapter .static-scene{object-position:75% top}
+@media(min-width:821px){.static-mode .about-chapter .static-scene{height:100svh;max-height:900px;object-position:center top}}
+@media(min-width:1500px){.about-chapter .biography-copy{padding-top:15vh!important}.bio-description{font-size:15px}}
+@media(min-width:821px) and (max-height:780px){
+ .about-chapter .biography-copy{padding-top:15vh}.about-chapter #about-title{font-size:32px}
+ .bio-introduction{font-size:12px;margin-top:8px}.bio-navigation{margin:10px 0 14px}
+ .bio-year{font-size:56px}.bio-stage h3{font-size:18px;margin:8px 0 12px}
+ .bio-description{font-size:13px;line-height:1.6;margin-top:10px}
+ .bio-tags{margin-top:12px}.bio-projects{margin-top:10px}
+}
+@media(min-width:821px) and (max-height:650px){
+ .motion-mode .bio-introduction{display:none}
+ .motion-mode .bio-navigation{margin:8px 0}
+ .motion-mode .bio-year{font-size:48px}
+}
+@media(max-width:820px){
+ .about-chapter #about-title{font-size:30px;max-width:none;line-height:1}
+ .motion-mode .about-chapter .biography-copy{top:calc(90px + 56.25vw + 14px);width:100%;padding:0 24px;max-height:none;overflow:visible}
+ .bio-introduction{font-size:12px;margin-top:9px;max-width:48ch}
+ .bio-navigation{gap:0;justify-content:space-between;max-width:440px;margin:10px 0 16px}
+ .bio-navigation button{font-size:11px;padding:6px 0;min-height:44px}
+ .bio-year{font-size:44px}.bio-stage h3{font-size:17px;margin:7px 0 12px}
+ .bio-organization{font-size:14px}.bio-role,.bio-date{font-size:12px}
+ .bio-description{font-size:13px;line-height:1.6;margin-top:10px;max-width:52ch}
+ .bio-roles{gap:4px;margin:8px 0}.bio-roles p{font-size:12px;line-height:1.5}
+ .bio-roles span{display:inline}.bio-roles span:before{content:' · '}
+ .bio-tags{font-size:11px;gap:6px 12px;margin-top:12px}
+ .bio-projects{font-size:11px;margin-top:10px}
+ .static-mode .about-chapter .biography-copy{width:100%;padding:28px 24px 45px}
+}
+@media(max-width:820px) and (max-height:740px){
+ .motion-mode[data-scene=about] .stage-caption{display:none}
+ .motion-mode .about-chapter #about-title{font-size:24px}
+ .motion-mode .bio-introduction{display:none}
+ .motion-mode .bio-navigation{margin:3px 0 3px}
+ .motion-mode .bio-navigation button{min-height:44px}
+ .motion-mode .bio-year{font-size:30px}
+ .motion-mode .bio-stage h3{font-size:14px;margin:5px 0 6px}
+ .motion-mode .bio-organization{font-size:13px;line-height:1.35}
+ .motion-mode .bio-role,.motion-mode .bio-date,.motion-mode .bio-roles p{font-size:11px;line-height:1.45}
+ .motion-mode .bio-roles{gap:3px;margin:6px 0}
+ .motion-mode .bio-description{font-size:12px;line-height:1.45;margin-top:8px}
+ .motion-mode .bio-tags{font-size:11px;line-height:1.4;gap:4px 10px;margin-top:8px}
+ .motion-mode .bio-projects{font-size:11px;line-height:1.45;margin-top:8px}
+}
+/* At tablet widths the film already leaves space on its left. Put the copy
+   there rather than adding a second scrollable column below a tall film. */
+@media(min-width:600px) and (max-width:820px){
+ .motion-mode .about-chapter .biography-copy{top:110px;width:46%;padding:0 24px}
+ .motion-mode[data-scene=about] .reading-shade{background:linear-gradient(90deg,#152017ed,#152017b3 40%,transparent 67%)}
+ .motion-mode .bio-navigation{gap:6px}
+ .motion-mode .bio-navigation button{font-size:11px}
+}
+
+/* P15 v03: a narrow identity rail, central dates, unchanged filmed character. */
+.bio-year-ghost{display:none}
+@media(min-width:1200px){
+ .motion-mode .about-chapter .biography-copy{width:100%;padding:0!important;position:static}
+ .motion-mode .biography-identity{position:absolute;left:var(--gutter);top:18vh;width:16vw;max-width:230px}
+ .motion-mode .about-chapter #about-title{font-size:clamp(46px,4.1vw,64px);line-height:.93}
+ .motion-mode .bio-introduction{font-size:12px;line-height:1.8;margin-top:24px;max-width:24ch}
+ .motion-mode .bio-navigation{flex-direction:column;align-items:stretch;width:135px;gap:0;margin:24px 0 0}
+ .motion-mode .bio-navigation button{text-align:left;font-size:12px;padding:10px 0;min-height:44px}
+ .motion-mode .bio-stages{position:absolute;left:26vw;top:18vh;width:24vw;max-width:350px}
+ .motion-mode .bio-year-ghost{display:block;font:400 clamp(108px,9.1vw,145px)/.9 Display,sans-serif;color:var(--ink);opacity:.24;letter-spacing:0}
+ .motion-mode .bio-year{font-size:26px;line-height:1.1;margin-top:22px;color:var(--ink)}
+ .motion-mode .bio-stage h3{font-size:13px;color:var(--accent);margin:10px 0 17px;letter-spacing:0}
+ .motion-mode .bio-organization{font-size:17px;line-height:1.5}
+ .motion-mode .bio-role{font-size:13px;line-height:1.6;margin-top:5px}
+ .motion-mode .bio-date{font-size:12px;line-height:1.7;margin-top:5px}
+ .motion-mode .bio-detail{position:absolute;top:44vh;left:0;right:0}
+ .motion-mode .bio-roles{margin:0 0 14px;gap:8px}
+ .motion-mode .bio-description{font-size:13px;line-height:1.75;margin-top:0}
+ .motion-mode .bio-tags{font-size:11px;gap:6px 12px;margin-top:15px}
+}
+@media(min-width:1200px) and (max-height:780px){
+ .motion-mode .biography-identity,.motion-mode .bio-stages{top:15vh}
+ .motion-mode .about-chapter #about-title{font-size:46px}
+ .motion-mode .bio-introduction{font-size:11px;margin-top:18px;line-height:1.7}
+ .motion-mode .bio-navigation{margin-top:18px}
+ .motion-mode .bio-year-ghost{font-size:100px}
+ .motion-mode .bio-year{font-size:23px;margin-top:16px}
+ .motion-mode .bio-stage h3{margin:8px 0 12px}
+ .motion-mode .bio-organization{font-size:16px}
+ .motion-mode .bio-detail{top:46vh}
+ .motion-mode .bio-description{font-size:12px;line-height:1.6}
+ .motion-mode .bio-roles{gap:5px;margin-bottom:10px}
+ .motion-mode .bio-roles p{font-size:11px;line-height:1.5}
+ .motion-mode .bio-tags{margin-top:10px}
+}
+@media(min-width:1200px) and (max-height:650px){
+ .motion-mode .biography-identity,.motion-mode .bio-stages{top:15vh}
+ .motion-mode .bio-detail{top:43vh}
+ .motion-mode .bio-year-ghost{font-size:80px}
+ .motion-mode .bio-year{margin-top:12px;font-size:21px}
+ .motion-mode .bio-stage h3{margin:6px 0 9px}
+ .motion-mode .bio-role,.motion-mode .bio-date{font-size:11px;line-height:1.45}
+}
+@media(max-width:1199px){.about-chapter #about-title br{display:none}.about-chapter #about-title br:after{content:' '}}
+
+/* P15 v04: one ordered rail follows the document scroll; no nested scroller. */
+.motion-mode .bio-stages{
+ height:var(--bio-viewport-height,60svh);overflow:hidden;overflow:clip;
+ mask-image:linear-gradient(to bottom,transparent,#000 14px,#000 calc(100% - 8px),transparent);
+ -webkit-mask-image:linear-gradient(to bottom,transparent,#000 14px,#000 calc(100% - 8px),transparent);
+}
+.motion-mode .bio-track{display:flex;flex-direction:column}
+.motion-mode[data-scene=about] .bio-track{will-change:transform}
+.motion-mode .bio-stage{
+ display:flow-root;position:relative;inset:auto;flex:0 0 var(--bio-step,60svh);
+ height:var(--bio-step,60svh);padding:16px 0 32px;opacity:1;
+}
+.motion-mode .bio-meta,.motion-mode .bio-detail{display:flow-root}
+.motion-mode .bio-detail{position:static;inset:auto;margin-top:26px}
+.motion-mode .bio-stage+.bio-stage .bio-meta{border-top:1px solid var(--line);padding-top:18px}
+@media(min-width:1200px){
+ .motion-mode .bio-stages{top:15vh}
+ .motion-mode .bio-year-ghost{font-size:clamp(94px,8vw,124px)}
+ .motion-mode .bio-year{margin-top:18px}
+}
+@media(max-width:820px){
+ .motion-mode .bio-stage{padding:12px 0 28px}
+ .motion-mode .bio-detail{margin-top:18px}
+}
+@media(max-height:650px){
+ .motion-mode .bio-detail{margin-top:16px}
+ .motion-mode .bio-year-ghost{font-size:76px}
+}
